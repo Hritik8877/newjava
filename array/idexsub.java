@@ -1,0 +1,25 @@
+package array;
+
+public class idexsub {
+    public static void main(String[] args) {
+        int arr[]={1,2,3,7,5};
+        int s=12;
+        
+
+        for(int i=0; i<arr.length; i++){
+            for(int j=i+1; j<arr.length; j++){
+                for(int k=j+1; k<arr.length; k++){
+                    if((arr[i]+arr[j]+arr[k])==s){
+                        
+                        System.out.println(i+1 +","+  (k+1));
+                        return;
+
+                    }
+                    
+                        
+                }
+            }
+        }
+    }
+    
+}
